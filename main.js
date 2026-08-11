@@ -451,7 +451,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const communityChapters = document.querySelectorAll('.community-story-chapter');
   const communityPrevBtn = document.getElementById('communityPrevBtn');
   const communityNextBtn = document.getElementById('communityNextBtn');
-  const communityCounter = document.getElementById('communityCounter');
+  const communityCurrentIndex = document.getElementById('communityCurrentIndex');
+  const communityTotalSlides = document.getElementById('communityTotalSlides');
+  const communityProgressFill = document.getElementById('communityProgressFill');
 
   let activeChapterIndex = 0;
   const totalCommunityChapters = communityChapters.length || 7;
@@ -474,8 +476,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    if (communityCounter) {
-      communityCounter.textContent = `Slide ${targetIndex + 1} of ${totalCommunityChapters}`;
+    if (communityCurrentIndex) {
+      communityCurrentIndex.textContent = String(targetIndex + 1).padStart(2, '0');
+    }
+    if (communityTotalSlides) {
+      communityTotalSlides.textContent = String(totalCommunityChapters).padStart(2, '0');
+    }
+    if (communityProgressFill) {
+      const progressPercent = ((targetIndex + 1) / totalCommunityChapters) * 100;
+      communityProgressFill.style.width = `${progressPercent}%`;
     }
   }
 
