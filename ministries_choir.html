@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choir | Jerusalem Mar Thoma Church, Hebbal</title>
+  <meta name="description" content="Glorifying God through music, worship, fellowship and service. Discover the Choir Ministry at Jerusalem Mar Thoma Church, Hebbal, Bengaluru.">
+
+  <!-- Google Fonts: Lora (Display/Headings) & Inter (UI/Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Global Pulsating Interactive Cursor / Ambient Glow Layer -->
+  <div class="global-cursor-glow" id="globalCursorGlow" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       1. HEADER / NAVIGATION (Shared Reusable Component with Active Color Indicator)
+       ========================================================================== -->
+  <header class="site-header grid-navbar" role="banner">
+    <div class="nav-grid-container">
+      
+      <!-- Left Cell: Logo & Church Name -->
+      <div class="nav-grid-cell nav-grid-brand">
+        <a href="index.html" class="brand-logo" aria-label="Jerusalem Mar Thoma Church Homepage">
+          <img src="./assets/church_logo.png" alt="Jerusalem Mar Thoma Church Crest Logo" class="brand-logo-img">
+          <span class="brand-name">JMTC, Hebbal</span>
+        </a>
+      </div>
+
+      <!-- Center Cell: Navigation Links with Dropdown Menus -->
+      <div class="nav-grid-cell nav-grid-menu">
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            
+            <!-- 1. ABOUT US (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="About Us Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="our_parish.html" class="dropdown-item" role="menuitem">
+                    <span>Our Parish</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="vicar.html" class="dropdown-item" role="menuitem">
+                    <span>Vicar</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="executive_committee.html" class="dropdown-item" role="menuitem">
+                    <span>Executive Committee</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="https://cbdiocese.marthoma.in/" class="dropdown-item" role="menuitem" target="_blank" rel="noopener noreferrer">
+                    <span>Our Diocese</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 2. MINISTRIES (Active Parent) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+                <span>Ministries</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Ministries Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="ministries_choir.html" class="dropdown-item active" role="menuitem" style="color:var(--color-sandy-brown, #E0954A); font-weight:600;">
+                    <span>Choir</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_edavaka_mission.html" class="dropdown-item" role="menuitem">
+                    <span>Edavaka Mission</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_senior_fellowship.html" class="dropdown-item" role="menuitem">
+                    <span>Senior Citizen Fellowship</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_sevika_sangham.html" class="dropdown-item" role="menuitem">
+                    <span>Sevika Sangham</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_sunday_school.html" class="dropdown-item" role="menuitem">
+                    <span>Sunday School</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_youth_league.html" class="dropdown-item" role="menuitem">
+                    <span>Youth League</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 3. ANNOUNCEMENTS (Single Direct Link) -->
+            <li class="nav-item">
+              <a href="index.html#quick-access" class="nav-link">Announcements</a>
+            </li>
+
+            <!-- 4. RESOURCES (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>Resources</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Resources Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="resources_forms.html" class="dropdown-item" role="menuitem">
+                    <span>Forms</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_gallery.html" class="dropdown-item" role="menuitem">
+                    <span>Gallery</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_lectionary.html" class="dropdown-item" role="menuitem">
+                    <span>Lectionary</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_kalpanas.html" class="dropdown-item" role="menuitem">
+                    <span>Kalpanas / Circulars</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_worship_order.html" class="dropdown-item" role="menuitem">
+                    <span>Worship Order</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 5. CONTACT US (Single Direct Link) -->
+            <li class="nav-item">
+              <a href="index.html#footer" class="nav-link">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Right Cell: Header Actions (Dark Mode Toggle & Hamburger) -->
+      <div class="nav-grid-cell nav-grid-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Open navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer Panel with Accordions -->
+    <div class="mobile-menu-drawer" id="mobileMenuDrawer" aria-label="Mobile Navigation">
+      <ul class="mobile-menu-list">
+        <!-- About Us Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>About Us</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="our_parish.html" class="mobile-sublink"><span>Our Parish</span> →</a>
+            <a href="vicar.html" class="mobile-sublink"><span>Vicar</span> →</a>
+            <a href="executive_committee.html" class="mobile-sublink"><span>Executive Committee</span> →</a>
+            <a href="https://cbdiocese.marthoma.in/" class="mobile-sublink" target="_blank" rel="noopener noreferrer"><span>Our Diocese</span> →</a>
+          </div>
+        </li>
+
+        <!-- Ministries Accordion -->
+        <li class="mobile-accordion-item open">
+          <button class="mobile-accordion-trigger">
+            <span>Ministries</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="ministries_choir.html" class="mobile-sublink" style="color:#D89169; font-weight:600;"><span>Choir</span> →</a>
+            <a href="ministries_edavaka_mission.html" class="mobile-sublink"><span>Edavaka Mission</span> →</a>
+            <a href="ministries_senior_fellowship.html" class="mobile-sublink"><span>Senior Citizen Fellowship</span> →</a>
+            <a href="ministries_sevika_sangham.html" class="mobile-sublink"><span>Sevika Sangham</span> →</a>
+            <a href="ministries_sunday_school.html" class="mobile-sublink"><span>Sunday School</span> →</a>
+            <a href="ministries_youth_league.html" class="mobile-sublink"><span>Youth League</span> →</a>
+          </div>
+        </li>
+
+        <li><a href="index.html#quick-access" class="nav-link">Announcements</a></li>
+
+        <!-- Resources Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>Resources</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="resources_forms.html" class="mobile-sublink"><span>Forms</span> →</a>
+            <a href="resources_gallery.html" class="mobile-sublink"><span>Gallery</span> →</a>
+            <a href="resources_lectionary.html" class="mobile-sublink"><span>Lectionary</span> →</a>
+            <a href="resources_kalpanas.html" class="mobile-sublink"><span>Kalpanas / Circulars</span> →</a>
+            <a href="resources_worship_order.html" class="mobile-sublink"><span>Worship Order</span> →</a>
+          </div>
+        </li>
+
+        <li><a href="index.html#footer" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN PAGE WRAPPER
+       ========================================================================== -->
+  <div class="choir-page-wrapper">
+    <main id="main-content">
+
+      <!-- ==========================================================================
+           1. HERO SECTION (Spacious Left Text / Right Curved Image Mockup Layout)
+           ========================================================================== -->
+      <section class="choir-hero-section" aria-label="Choir Ministry Hero Banner">
+        <div class="choir-hero-grid">
+          
+          <!-- LEFT COLUMN: Eyebrow, Title & Description -->
+          <div class="choir-hero-text-col">
+            <span class="choir-hero-eyebrow">MINISTRIES</span>
+            <h1 class="choir-hero-title">Choir</h1>
+            <p class="choir-hero-desc">Glorifying God through music, worship, fellowship and service.</p>
+          </div>
+
+          <!-- RIGHT COLUMN: Curved Choir Image Container -->
+          <div class="choir-hero-img-col">
+            <img src="./assets/choir_hero_banner.jpg" alt="Jerusalem Mar Thoma Church Choir in Liturgical Robes" class="choir-hero-img">
+          </div>
+
+        </div>
+      </section>
+
+      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+
+        <!-- ==========================================================================
+             2 & 3. ABOUT THE CHOIR & REGULAR MEETING TIMINGS SECTION
+             ========================================================================== -->
+        <section class="choir-section" aria-label="About the Choir and Meeting Timings">
+          <div class="choir-about-timings-grid">
+            
+            <!-- Column 1 (46% width): About Editorial Text -->
+            <div>
+              <h2 class="choir-section-title">About the Choir</h2>
+              <div class="choir-title-accent"></div>
+
+              <div class="choir-about-text">
+                <p>The Choir Ministry exists to glorify God through uplifting music and worship. We lead the congregation in praise, enhance worship services and foster a spirit of unity and devotion through music.</p>
+                <p>The choir actively participates in church services, retreats, special programs, choir festivals and outreach initiatives.</p>
+                <p>The ministry provides opportunities for fellowship, discipleship and spiritual growth through service.</p>
+                <p>The choir welcomes members who desire to use their gifts for the glory of God and the strengthening of the church community.</p>
+              </div>
+            </div>
+
+            <!-- Column 2 (26% width): Scripture Quote Callout -->
+            <div class="choir-quote-block">
+              <div class="choir-quote-icon">“</div>
+              <p class="choir-quote-text">Sing to the Lord a new song; sing to the Lord, all the earth.</p>
+              <span class="choir-quote-cite">Psalm 96:1</span>
+            </div>
+
+            <!-- Column 3 (28% width): Regular Meeting Timings Card -->
+            <div class="choir-timings-card">
+              <div class="choir-timings-header">Regular Meeting Timings</div>
+              <table class="choir-timings-table" aria-label="Regular Meeting Timings Table">
+                <tbody>
+                  <tr>
+                    <td class="cell-label">
+                      <svg class="choir-timings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                      <span>Choir Practice</span>
+                    </td>
+                    <td>Every Saturday 5:00 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="cell-label">
+                      <svg class="choir-timings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-3-3.87"/><path d="M7 21v-2a4 4 0 0 1 3-3.87"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><circle cx="16" cy="7" r="4"/></svg>
+                      <span>Special Rehearsals</span>
+                    </td>
+                    <td>As Announced</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             4. OFFICE BEARERS SECTION (Two-column Directory Table)
+             ========================================================================== -->
+        <section class="choir-section" aria-label="Office Bearers">
+          <h2 class="choir-section-title">Office Bearers</h2>
+          <div class="choir-title-accent"></div>
+
+          <div class="choir-leadership-wrap">
+            <table class="choir-leadership-table" aria-label="Choir Office Bearers Directory Table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 35%;">Role</th>
+                  <th scope="col" style="width: 65%;">Name(s)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-pos">Choir Leader</td>
+                  <td class="cell-name">Mr. Rhys Rajan</td>
+                </tr>
+                <tr>
+                  <td class="cell-pos">Asst. Choir Leader</td>
+                  <td class="cell-name">Dr. Philcy Philip</td>
+                </tr>
+                <tr>
+                  <td class="cell-pos">Secretary</td>
+                  <td class="cell-name">Mrs. Sneha Susan Koshy</td>
+                </tr>
+                <tr>
+                  <td class="cell-pos">Treasurer</td>
+                  <td class="cell-name">Mrs. Suja Joseph</td>
+                </tr>
+                <tr>
+                  <td class="cell-pos">Committee Members</td>
+                  <td class="cell-name">
+                    <div class="choir-members-list">
+                      <div>Mrs. Shiba Saji</div>
+                      <div>Mr. Rohaan John</div>
+                      <div>Mrs. Jiji Mathukutty</div>
+                      <div>Dr. Susan Philip</div>
+                      <div>Mr. Nova Daniel</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-pos">Choir Auditor</td>
+                  <td class="cell-name">Mrs. Reena Shibu</td>
+                </tr>
+                <tr>
+                  <td class="cell-pos">Church Committee Representative</td>
+                  <td class="cell-name">Mr. Rhys Rajan</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             5. UPCOMING EVENTS SECTION (NEW REBUILT TRAY CAROUSEL)
+             ========================================================================== -->
+        <section class="jmtc-carousel-section choir-section" aria-label="Upcoming Events">
+          <div class="jmtc-carousel-header">
+            <div>
+              <span class="jmtc-section-label">UPCOMING EVENTS</span>
+              <h2 class="jmtc-section-title">Upcoming at Choir</h2>
+              <div class="jmtc-title-accent"></div>
+            </div>
+            <!-- Header Navigation Buttons -->
+            <div class="jmtc-carousel-nav">
+              <button class="jmtc-carousel-btn jmtc-carousel-btn-prev" id="upcomingPrevBtn" aria-label="Previous events">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button class="jmtc-carousel-btn jmtc-carousel-btn-next" id="upcomingNextBtn" aria-label="Next events">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="jmtc-carousel-viewport">
+            <div class="jmtc-carousel-track" id="upcomingTrack">
+              
+              <!-- Card 1 -->
+              <div class="jmtc-card">
+                <div class="jmtc-event-img-wrap">
+                  <div class="jmtc-date-badge">
+                    <span class="jmtc-badge-month">DEC</span>
+                    <span class="jmtc-badge-day">25</span>
+                    <span class="jmtc-badge-dow">THU</span>
+                  </div>
+                  <img src="./assets/church_hero_1785997944826.jpg" alt="Christmas Carol Service" class="jmtc-event-img">
+                </div>
+                <div class="jmtc-event-body">
+                  <div>
+                    <h3 class="jmtc-event-title">Christmas Carol Service</h3>
+                    <div class="jmtc-event-meta">
+                      <div class="jmtc-event-meta-item"><span>📅 Dec 25, 2025</span></div>
+                      <div class="jmtc-event-meta-item"><span>⏰ 6:00 PM – 8:00 PM</span></div>
+                    </div>
+                  </div>
+                  <a href="#events" class="jmtc-event-btn">Learn More &rarr;</a>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="jmtc-card">
+                <div class="jmtc-event-img-wrap">
+                  <div class="jmtc-date-badge">
+                    <span class="jmtc-badge-month">JUN</span>
+                    <span class="jmtc-badge-day">14</span>
+                    <span class="jmtc-badge-dow">SAT</span>
+                  </div>
+                  <img src="./assets/church_interior_1785997991930.jpg" alt="Worship Night" class="jmtc-event-img">
+                </div>
+                <div class="jmtc-event-body">
+                  <div>
+                    <h3 class="jmtc-event-title">Worship Night</h3>
+                    <div class="jmtc-event-meta">
+                      <div class="jmtc-event-meta-item"><span>📅 Jun 14, 2025</span></div>
+                      <div class="jmtc-event-meta-item"><span>⏰ 6:30 PM – 8:30 PM</span></div>
+                    </div>
+                  </div>
+                  <a href="#events" class="jmtc-event-btn">Learn More &rarr;</a>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="jmtc-card">
+                <div class="jmtc-event-img-wrap">
+                  <div class="jmtc-date-badge">
+                    <span class="jmtc-badge-month">JUL</span>
+                    <span class="jmtc-badge-day">20</span>
+                    <span class="jmtc-badge-dow">SUN</span>
+                  </div>
+                  <img src="./assets/sevika_sangham_study.jpg" alt="Choir Anniversary Celebration" class="jmtc-event-img">
+                </div>
+                <div class="jmtc-event-body">
+                  <div>
+                    <h3 class="jmtc-event-title">Choir Anniversary Celebration</h3>
+                    <div class="jmtc-event-meta">
+                      <div class="jmtc-event-meta-item"><span>📅 Jul 20, 2025</span></div>
+                      <div class="jmtc-event-meta-item"><span>⏰ 10:00 AM – 12:30 PM</span></div>
+                    </div>
+                  </div>
+                  <a href="#events" class="jmtc-event-btn">Learn More &rarr;</a>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="jmtc-card">
+                <div class="jmtc-event-img-wrap">
+                  <div class="jmtc-date-badge">
+                    <span class="jmtc-badge-month">AUG</span>
+                    <span class="jmtc-badge-day">02</span>
+                    <span class="jmtc-badge-dow">SAT</span>
+                  </div>
+                  <img src="./assets/youth_event_1785997975934.jpg" alt="Hymn Practice Retreat" class="jmtc-event-img">
+                </div>
+                <div class="jmtc-event-body">
+                  <div>
+                    <h3 class="jmtc-event-title">Hymn Practice Retreat</h3>
+                    <div class="jmtc-event-meta">
+                      <div class="jmtc-event-meta-item"><span>📅 Aug 02, 2025</span></div>
+                      <div class="jmtc-event-meta-item"><span>⏰ 9:00 AM – 1:00 PM</span></div>
+                    </div>
+                  </div>
+                  <a href="#events" class="jmtc-event-btn">Learn More &rarr;</a>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="jmtc-card">
+                <div class="jmtc-event-img-wrap">
+                  <div class="jmtc-date-badge">
+                    <span class="jmtc-badge-month">SEP</span>
+                    <span class="jmtc-badge-day">15</span>
+                    <span class="jmtc-badge-dow">MON</span>
+                  </div>
+                  <img src="./assets/choir_hero_banner.jpg" alt="Choir Fest 2025" class="jmtc-event-img">
+                </div>
+                <div class="jmtc-event-body">
+                  <div>
+                    <h3 class="jmtc-event-title">Choir Fest 2025</h3>
+                    <div class="jmtc-event-meta">
+                      <div class="jmtc-event-meta-item"><span>📅 Sep 15, 2025</span></div>
+                      <div class="jmtc-event-meta-item"><span>⏰ 5:30 PM – 8:00 PM</span></div>
+                    </div>
+                  </div>
+                  <a href="#events" class="jmtc-event-btn">Learn More &rarr;</a>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="jmtc-card">
+                <div class="jmtc-event-img-wrap">
+                  <div class="jmtc-date-badge">
+                    <span class="jmtc-badge-month">OCT</span>
+                    <span class="jmtc-badge-day">10</span>
+                    <span class="jmtc-badge-dow">FRI</span>
+                  </div>
+                  <img src="./assets/diocesan_bishop_portrait.png" alt="Episcopal Music Service" class="jmtc-event-img">
+                </div>
+                <div class="jmtc-event-body">
+                  <div>
+                    <h3 class="jmtc-event-title">Episcopal Music Service</h3>
+                    <div class="jmtc-event-meta">
+                      <div class="jmtc-event-meta-item"><span>📅 Oct 10, 2025</span></div>
+                      <div class="jmtc-event-meta-item"><span>⏰ 8:00 AM – 11:00 AM</span></div>
+                    </div>
+                  </div>
+                  <a href="#events" class="jmtc-event-btn">Learn More &rarr;</a>
+                </div>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="jmtc-card">
+                <div class="jmtc-event-img-wrap">
+                  <div class="jmtc-date-badge">
+                    <span class="jmtc-badge-month">NOV</span>
+                    <span class="jmtc-badge-day">22</span>
+                    <span class="jmtc-badge-dow">SAT</span>
+                  </div>
+                  <img src="./assets/church_hero_1785997944826.jpg" alt="Thanksgiving Hymnal Evening" class="jmtc-event-img">
+                </div>
+                <div class="jmtc-event-body">
+                  <div>
+                    <h3 class="jmtc-event-title">Thanksgiving Hymnal Evening</h3>
+                    <div class="jmtc-event-meta">
+                      <div class="jmtc-event-meta-item"><span>📅 Nov 22, 2025</span></div>
+                      <div class="jmtc-event-meta-item"><span>⏰ 6:00 PM – 8:30 PM</span></div>
+                    </div>
+                  </div>
+                  <a href="#events" class="jmtc-event-btn">Learn More &rarr;</a>
+                </div>
+              </div>
+
+              <!-- Card 8 -->
+              <div class="jmtc-card">
+                <div class="jmtc-event-img-wrap">
+                  <div class="jmtc-date-badge">
+                    <span class="jmtc-badge-month">DEC</span>
+                    <span class="jmtc-badge-day">31</span>
+                    <span class="jmtc-badge-dow">WED</span>
+                  </div>
+                  <img src="./assets/church_interior_1785997991930.jpg" alt="New Year Praise Service" class="jmtc-event-img">
+                </div>
+                <div class="jmtc-event-body">
+                  <div>
+                    <h3 class="jmtc-event-title">New Year Praise Service</h3>
+                    <div class="jmtc-event-meta">
+                      <div class="jmtc-event-meta-item"><span>📅 Dec 31, 2025</span></div>
+                      <div class="jmtc-event-meta-item"><span>⏰ 11:00 PM – 12:30 AM</span></div>
+                    </div>
+                  </div>
+                  <a href="#events" class="jmtc-event-btn">Learn More &rarr;</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="jmtc-dots-wrap"></div>
+        </section>
+
+        <!-- ==========================================================================
+             6. GALLERY SECTION (NEW REBUILT TRAY CAROUSEL)
+             ========================================================================== -->
+        <section class="jmtc-carousel-section choir-section" aria-label="Gallery">
+          <div class="jmtc-carousel-header">
+            <div>
+              <span class="jmtc-section-label">GALLERY</span>
+              <h2 class="jmtc-section-title">Moments of Faith &amp; Fellowship</h2>
+              <div class="jmtc-title-accent"></div>
+            </div>
+            <!-- Header Navigation Buttons -->
+            <div class="jmtc-carousel-nav">
+              <button class="jmtc-carousel-btn jmtc-carousel-btn-prev" id="galleryPrevBtn" aria-label="Previous gallery albums">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button class="jmtc-carousel-btn jmtc-carousel-btn-next" id="galleryNextBtn" aria-label="Next gallery albums">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="jmtc-carousel-viewport">
+            <div class="jmtc-carousel-track" id="galleryTrack">
+              
+              <!-- Album 1 (Photo Album) -->
+              <div class="jmtc-card">
+                <a href="#gallery-folder" class="jmtc-gallery-img-wrap" aria-label="Open Choir Singing Performance album">
+                  <img src="./assets/sevika_sangham_study.jpg" alt="Choir Singing Performance" class="jmtc-gallery-img">
+                </a>
+                <div class="jmtc-gallery-body">
+                  <h3 class="jmtc-gallery-title">
+                    <a href="#gallery-folder" class="jmtc-gallery-title-link">Choir Singing Performance</a>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Album 2 (Video Recording) -->
+              <div class="jmtc-card">
+                <a href="#gallery-folder" class="jmtc-gallery-img-wrap" aria-label="Open Choir Rehearsal Video album">
+                  <span class="jmtc-video-badge">▶ Video</span>
+                  <img src="./assets/church_hero_1785997944826.jpg" alt="Choir Rehearsal &amp; Fellowship" class="jmtc-gallery-img">
+                </a>
+                <div class="jmtc-gallery-body">
+                  <h3 class="jmtc-gallery-title">
+                    <a href="#gallery-folder" class="jmtc-gallery-title-link">Choir Rehearsal &amp; Fellowship</a>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Album 3 (Photo Album) -->
+              <div class="jmtc-card">
+                <a href="#gallery-folder" class="jmtc-gallery-img-wrap" aria-label="Open Youth Choir Hymn Practice album">
+                  <img src="./assets/youth_event_1785997975934.jpg" alt="Youth Choir Hymn Practice" class="jmtc-gallery-img">
+                </a>
+                <div class="jmtc-gallery-body">
+                  <h3 class="jmtc-gallery-title">
+                    <a href="#gallery-folder" class="jmtc-gallery-title-link">Youth Choir Hymn Practice</a>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Album 4 (Video Recording) -->
+              <div class="jmtc-card">
+                <a href="#gallery-folder" class="jmtc-gallery-img-wrap" aria-label="Open Worship Night Highlights album">
+                  <span class="jmtc-video-badge">▶ Video</span>
+                  <img src="./assets/church_interior_1785997991930.jpg" alt="Worship Night Highlights" class="jmtc-gallery-img">
+                </a>
+                <div class="jmtc-gallery-body">
+                  <h3 class="jmtc-gallery-title">
+                    <a href="#gallery-folder" class="jmtc-gallery-title-link">Worship Night Highlights</a>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Album 5 (Photo Album) -->
+              <div class="jmtc-card">
+                <a href="#gallery-folder" class="jmtc-gallery-img-wrap" aria-label="Open Christmas Carol Service album">
+                  <img src="./assets/choir_hero_banner.jpg" alt="Christmas Carol Service" class="jmtc-gallery-img">
+                </a>
+                <div class="jmtc-gallery-body">
+                  <h3 class="jmtc-gallery-title">
+                    <a href="#gallery-folder" class="jmtc-gallery-title-link">Christmas Carol Service</a>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Album 6 (Photo Album) -->
+              <div class="jmtc-card">
+                <a href="#gallery-folder" class="jmtc-gallery-img-wrap" aria-label="Open Episcopal Visit Service album">
+                  <img src="./assets/diocesan_bishop_portrait.png" alt="Episcopal Visit Service" class="jmtc-gallery-img">
+                </a>
+                <div class="jmtc-gallery-body">
+                  <h3 class="jmtc-gallery-title">
+                    <a href="#gallery-folder" class="jmtc-gallery-title-link">Episcopal Visit Service</a>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Album 7 (Video Recording) -->
+              <div class="jmtc-card">
+                <a href="#gallery-folder" class="jmtc-gallery-img-wrap" aria-label="Open Easter Music Festival album">
+                  <span class="jmtc-video-badge">▶ Video</span>
+                  <img src="./assets/church_hero_1785997944826.jpg" alt="Easter Music Festival" class="jmtc-gallery-img">
+                </a>
+                <div class="jmtc-gallery-body">
+                  <h3 class="jmtc-gallery-title">
+                    <a href="#gallery-folder" class="jmtc-gallery-title-link">Easter Music Festival</a>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Album 8 (Photo Album) -->
+              <div class="jmtc-card">
+                <a href="#gallery-folder" class="jmtc-gallery-img-wrap" aria-label="Open Annual Choir Festival 2025 album">
+                  <img src="./assets/youth_event_1785997975934.jpg" alt="Annual Choir Festival 2025" class="jmtc-gallery-img">
+                </a>
+                <div class="jmtc-gallery-body">
+                  <h3 class="jmtc-gallery-title">
+                    <a href="#gallery-folder" class="jmtc-gallery-title-link">Annual Choir Festival 2025</a>
+                  </h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="jmtc-dots-wrap"></div>
+        </section>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER (Shared Reusable Component 100% Identical to Other Pages)
+       ========================================================================== -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand -->
+        <div class="footer-col footer-brand-col">
+          <img src="./assets/church_logo.png" alt="Jerusalem Mar Thoma Church Crest Logo" class="footer-brand-logo-img">
+          <div class="footer-brand-text">
+            <h2>Jerusalem Mar Thoma Church, Hebbal</h2>
+          </div>
+        </div>
+
+        <!-- Col 2: Contact Us -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <div class="footer-info-block">
+            <p>Jerusalem Mar Thoma Church</p>
+            <p>Hebbal, Bengaluru, Karnataka</p>
+            <p class="footer-contact-row"><strong>Phone:</strong> +91 98765 43210</p>
+            <p class="footer-contact-row"><strong>Email:</strong> office@jmtchebbal.org</p>
+          </div>
+        </div>
+
+        <!-- Col 3: Service Details -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Service Details</h3>
+          <div class="footer-info-block">
+            <div class="service-item">
+              <h4 class="service-name">Malayalam Service</h4>
+              <p class="service-time">Every Sunday, 8:00 AM - 9:15 AM</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-name">English Service</h4>
+              <p class="service-time">Every Sunday, 9:30 AM - 10:30 AM</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jerusalem Mar Thoma Church, Hebbal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+
+  <!-- Carousel & Gallery Filtering Controller Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Upcoming Events Carousel
+      const upcomingTrack = id => document.getElementById(id);
+      const track = upcomingTrack('upcomingTrack');
+      const prevBtn = upcomingTrack('upcomingPrevBtn');
+      const nextBtn = upcomingTrack('upcomingNextBtn');
+      let upcomingPos = 0;
+
+      if (track && prevBtn && nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          const maxShift = track.scrollWidth - track.clientWidth;
+          upcomingPos = Math.min(upcomingPos + 300, maxShift);
+          track.style.transform = `translateX(-${upcomingPos}px)`;
+        });
+        prevBtn.addEventListener('click', () => {
+          upcomingPos = Math.max(upcomingPos - 300, 0);
+          track.style.transform = `translateX(-${upcomingPos}px)`;
+        });
+      }
+
+      // 2. Gallery Carousel & Filtering
+      const galleryTrack = upcomingTrack('galleryTrack');
+      const galleryPrevBtn = upcomingTrack('galleryPrevBtn');
+      const galleryNextBtn = upcomingTrack('galleryNextBtn');
+      let galleryPos = 0;
+
+      if (galleryTrack && galleryPrevBtn && galleryNextBtn) {
+        galleryNextBtn.addEventListener('click', () => {
+          const maxShift = galleryTrack.scrollWidth - galleryTrack.clientWidth;
+          galleryPos = Math.min(galleryPos + 300, maxShift);
+          galleryTrack.style.transform = `translateX(-${galleryPos}px)`;
+        });
+        galleryPrevBtn.addEventListener('click', () => {
+          galleryPos = Math.max(galleryPos - 300, 0);
+          galleryTrack.style.transform = `translateX(-${galleryPos}px)`;
+        });
+      }
+
+      // Gallery Filter Tabs
+      const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+      const galleryCards = document.querySelectorAll('.gallery-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          const filter = btn.getAttribute('data-filter');
+          galleryPos = 0;
+          if (galleryTrack) galleryTrack.style.transform = 'translateX(0px)';
+
+          galleryCards.forEach(card => {
+            const type = card.getAttribute('data-type');
+            if (filter === 'all' || type === filter) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

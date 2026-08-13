@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    mobileMenuDrawer.querySelectorAll('.nav-link').forEach(link => {
+    mobileMenuDrawer.querySelectorAll('.nav-link, .mobile-sublink').forEach(link => {
       link.addEventListener('click', () => {
         mobileMenuDrawer.classList.remove('open');
         hamburgerBtn.setAttribute('aria-expanded', 'false');
@@ -55,6 +55,96 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  /* --------------------------------------------------------------------------
+     1.1. DROPDOWN MENUS & MOBILE ACCORDION CONTROLLER
+     -------------------------------------------------------------------------- */
+  const dropdownItems = document.querySelectorAll('.nav-item.has-dropdown');
+
+  dropdownItems.forEach(item => {
+    const trigger = item.querySelector('.dropdown-trigger');
+    let closeTimeout = null;
+
+    item.addEventListener('mouseenter', () => {
+      clearTimeout(closeTimeout);
+      dropdownItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('open');
+          const otherTrigger = otherItem.querySelector('.dropdown-trigger');
+          if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+      item.classList.add('open');
+      if (trigger) trigger.setAttribute('aria-expanded', 'true');
+    });
+
+    item.addEventListener('mouseleave', () => {
+      closeTimeout = setTimeout(() => {
+        item.classList.remove('open');
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      }, 200); // 200ms grace period on mouse exit
+    });
+
+    if (trigger) {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const isOpen = item.classList.contains('open');
+        
+        // Close all other dropdowns
+        dropdownItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('open');
+            const otherTrigger = otherItem.querySelector('.dropdown-trigger');
+            if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Toggle current dropdown
+        if (isOpen) {
+          item.classList.remove('open');
+          trigger.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('open');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  });
+
+  // Close dropdowns on click outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-item.has-dropdown')) {
+      dropdownItems.forEach(item => {
+        item.classList.remove('open');
+        const trigger = item.querySelector('.dropdown-trigger');
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  // Mobile Accordion Items in Mobile Drawer
+  const mobileAccordions = document.querySelectorAll('.mobile-accordion-item');
+  mobileAccordions.forEach(item => {
+    const trigger = item.querySelector('.mobile-accordion-trigger');
+    if (trigger) {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isOpen = item.classList.contains('open');
+        
+        mobileAccordions.forEach(other => {
+          if (other !== item) other.classList.remove('open');
+        });
+        
+        if (isOpen) {
+          item.classList.remove('open');
+        } else {
+          item.classList.add('open');
+        }
+      });
+    }
+  });
 
   /* --------------------------------------------------------------------------
      1.5. FEATURED EXHIBITION SHOWCASE CAROUSEL CONTROLLER
@@ -747,4 +837,149 @@ document.addEventListener('DOMContentLoaded', () => {
       toast.classList.remove('show');
     }, 3000);
   }
+
+  /* --------------------------------------------------------------------------
+     9. UNIFIED MINISTRY PAGES CAROUSEL CONTROLLER (Upcoming & Gallery)
+     -------------------------------------------------------------------------- */
+  /* --------------------------------------------------------------------------
+     9. REBUILT UNIFIED JMTC CAROUSEL ENGINE (Upcoming Events & Gallery)
+     -------------------------------------------------------------------------- */
+  function initMinistryCarousels() {
+    const viewports = document.querySelectorAll('.jmtc-carousel-viewport, .carousel-track-container');
+
+    viewports.forEach(viewport => {
+      const track = viewport.querySelector('.jmtc-carousel-track, .carousel-track');
+      const section = viewport.closest('.jmtc-carousel-section, .choir-section');
+      if (!track || !section) return;
+
+      const prevBtn = section.querySelector('.jmtc-carousel-btn-prev, #upcomingPrevBtn, #galleryPrevBtn');
+      const nextBtn = section.querySelector('.jmtc-carousel-btn-next, #upcomingNextBtn, #galleryNextBtn');
+      
+      let dotsContainer = section.querySelector('.jmtc-dots-container');
+      if (!dotsContainer) {
+        dotsContainer = document.createElement('div');
+        dotsContainer.className = 'jmtc-dots-container';
+        section.appendChild(dotsContainer);
+      }
+
+      let dotsWrap = dotsContainer.querySelector('.jmtc-dots-wrap, .carousel-dots-indicator');
+      if (!dotsWrap) {
+        dotsWrap = document.createElement('div');
+        dotsWrap.className = 'jmtc-dots-wrap';
+        dotsContainer.appendChild(dotsWrap);
+      }
+
+      function getCardsPerPage() {
+        const w = window.innerWidth;
+        if (w <= 767) {
+          return 1; // Mobile: 1 card per view -> 1 dot per card
+        } else if (w < 1200) {
+          return 2; // Tablet: 2 cards per view -> 1 dot per 2 cards
+        } else {
+          return 4; // Desktop: 4 cards per view -> 1 dot per 4 cards
+        }
+      }
+
+      function getStepSize() {
+        return viewport.clientWidth || 1;
+      }
+
+      function getTotalPages() {
+        const cards = track.querySelectorAll(':scope > .jmtc-card, :scope > .choir-event-card, :scope > .gallery-card-new, :scope > .gallery-card');
+        if (cards.length === 0) return 0;
+        const cardsPerPage = getCardsPerPage();
+        return Math.max(1, Math.ceil(cards.length / cardsPerPage));
+      }
+
+      function getCurrentPageIndex() {
+        const step = getStepSize();
+        if (step <= 0) return 0;
+        const page = Math.round(viewport.scrollLeft / step);
+        return Math.max(0, Math.min(page, getTotalPages() - 1));
+      }
+
+      function renderDots() {
+        const totalPages = getTotalPages();
+        dotsWrap.innerHTML = '';
+        if (totalPages <= 1) return;
+
+        const cardsPerPage = getCardsPerPage();
+
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'jmtc-dot' + (i === 0 ? ' active' : '');
+          const labelText = (cardsPerPage === 1) 
+            ? `Go to event card ${i + 1}` 
+            : `Go to slide group ${i + 1}`;
+          dot.setAttribute('aria-label', labelText);
+
+          dot.onclick = () => {
+            const step = getStepSize();
+            viewport.scrollTo({ left: Math.round(i * step), behavior: 'smooth' });
+          };
+          dotsWrap.appendChild(dot);
+        }
+
+        updateNavState();
+      }
+
+      function updateNavState() {
+        const totalPages = getTotalPages();
+        if (totalPages <= 1) {
+          if (prevBtn) prevBtn.disabled = true;
+          if (nextBtn) nextBtn.disabled = true;
+          return;
+        }
+
+        const currentIndex = getCurrentPageIndex();
+
+        // Update active dot
+        const dots = dotsWrap.querySelectorAll('.jmtc-dot, .carousel-dot');
+        dots.forEach((dot, idx) => {
+          if (idx === Math.max(0, currentIndex)) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+
+        // Update arrow disabled state
+        if (prevBtn) prevBtn.disabled = (currentIndex <= 0);
+        if (nextBtn) nextBtn.disabled = (currentIndex >= totalPages - 1);
+      }
+
+      if (prevBtn) {
+        prevBtn.onclick = () => {
+          const step = getStepSize();
+          const currentIndex = getCurrentPageIndex();
+          const targetIndex = Math.max(0, currentIndex - 1);
+          viewport.scrollTo({ left: Math.round(targetIndex * step), behavior: 'smooth' });
+        };
+      }
+
+      if (nextBtn) {
+        nextBtn.onclick = () => {
+          const totalPages = getTotalPages();
+          const step = getStepSize();
+          const currentIndex = getCurrentPageIndex();
+          const targetIndex = Math.min(totalPages - 1, currentIndex + 1);
+          viewport.scrollTo({ left: Math.round(targetIndex * step), behavior: 'smooth' });
+        };
+      }
+
+      viewport.addEventListener('scroll', updateNavState, { passive: true });
+      
+      let resizeDebounce;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeDebounce);
+        resizeDebounce = setTimeout(() => {
+          renderDots();
+        }, 100);
+      });
+
+      renderDots();
+    });
+  }
+
+  initMinistryCarousels();
 });

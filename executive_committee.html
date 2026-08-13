@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive Committee | Jerusalem Mar Thoma Church, Hebbal</title>
+  <meta name="description" content="Executive Committee directory of Jerusalem Mar Thoma Church, Hebbal, Bengaluru. Core committee leadership, organization representatives, and area prayer group representatives.">
+
+  <!-- Google Fonts: Lora (Display/Headings) & Inter (UI/Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Global Pulsating Interactive Cursor / Ambient Glow Layer -->
+  <div class="global-cursor-glow" id="globalCursorGlow" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       1. HEADER / NAVIGATION (Shared Reusable Component with Active Color Indicator)
+       ========================================================================== -->
+  <header class="site-header grid-navbar" role="banner">
+    <div class="nav-grid-container">
+      
+      <!-- Left Cell: Logo & Church Name -->
+      <div class="nav-grid-cell nav-grid-brand">
+        <a href="index.html" class="brand-logo" aria-label="Jerusalem Mar Thoma Church Homepage">
+          <img src="./assets/church_logo.png" alt="Jerusalem Mar Thoma Church Crest Logo" class="brand-logo-img">
+          <span class="brand-name">JMTC, Hebbal</span>
+        </a>
+      </div>
+
+      <!-- Center Cell: Navigation Links with Dropdown Menus -->
+      <div class="nav-grid-cell nav-grid-menu">
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            
+            <!-- 1. ABOUT US (Dropdown Trigger Only - Active Parent Section in Terracotta) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="About Us Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="our_parish.html" class="dropdown-item" role="menuitem">
+                    <span>Our Parish</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="vicar.html" class="dropdown-item" role="menuitem">
+                    <span>Vicar</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="executive_committee.html" class="dropdown-item active" role="menuitem" style="color:var(--color-sandy-brown, #E0954A); font-weight:600;">
+                    <span>Executive Committee</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="https://cbdiocese.marthoma.in/" class="dropdown-item" role="menuitem" target="_blank" rel="noopener noreferrer">
+                    <span>Our Diocese</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 2. MINISTRIES (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>Ministries</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Ministries Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="ministries_choir.html" class="dropdown-item" role="menuitem">
+                    <span>Choir</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_edavaka_mission.html" class="dropdown-item" role="menuitem">
+                    <span>Edavaka Mission</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_senior_fellowship.html" class="dropdown-item" role="menuitem">
+                    <span>Senior Citizen Fellowship</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_sevika_sangham.html" class="dropdown-item" role="menuitem">
+                    <span>Sevika Sangham</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_sunday_school.html" class="dropdown-item" role="menuitem">
+                    <span>Sunday School</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_youth_league.html" class="dropdown-item" role="menuitem">
+                    <span>Youth League</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 3. ANNOUNCEMENTS (Single Direct Link) -->
+            <li class="nav-item">
+              <a href="index.html#quick-access" class="nav-link">Announcements</a>
+            </li>
+
+            <!-- 4. RESOURCES (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>Resources</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Resources Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="resources_forms.html" class="dropdown-item" role="menuitem">
+                    <span>Forms</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_gallery.html" class="dropdown-item" role="menuitem">
+                    <span>Gallery</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_lectionary.html" class="dropdown-item" role="menuitem">
+                    <span>Lectionary</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_kalpanas.html" class="dropdown-item" role="menuitem">
+                    <span>Kalpanas / Circulars</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_worship_order.html" class="dropdown-item" role="menuitem">
+                    <span>Worship Order</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 5. CONTACT US (Single Direct Link) -->
+            <li class="nav-item">
+              <a href="index.html#footer" class="nav-link">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Right Cell: Header Actions (Dark Mode Toggle & Hamburger) -->
+      <div class="nav-grid-cell nav-grid-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Open navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer Panel with Accordions -->
+    <div class="mobile-menu-drawer" id="mobileMenuDrawer" aria-label="Mobile Navigation">
+      <ul class="mobile-menu-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        
+        <!-- About Us Accordion -->
+        <li class="mobile-accordion-item open">
+          <button class="mobile-accordion-trigger">
+            <span>About Us</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="our_parish.html" class="mobile-sublink"><span>Our Parish</span> →</a>
+            <a href="vicar.html" class="mobile-sublink"><span>Vicar</span> →</a>
+            <a href="executive_committee.html" class="mobile-sublink" style="color:#D89169; font-weight:600;"><span>Executive Committee</span> →</a>
+            <a href="https://cbdiocese.marthoma.in/" class="mobile-sublink" target="_blank" rel="noopener noreferrer"><span>Our Diocese</span> →</a>
+          </div>
+        </li>
+
+        <!-- Ministries Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>Ministries</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="ministries_choir.html" class="mobile-sublink"><span>Choir</span> →</a>
+            <a href="ministries_edavaka_mission.html" class="mobile-sublink"><span>Edavaka Mission</span> →</a>
+            <a href="ministries_senior_fellowship.html" class="mobile-sublink"><span>Senior Citizen Fellowship</span> →</a>
+            <a href="ministries_sevika_sangham.html" class="mobile-sublink"><span>Sevika Sangham</span> →</a>
+            <a href="ministries_sunday_school.html" class="mobile-sublink"><span>Sunday School</span> →</a>
+            <a href="ministries_youth_league.html" class="mobile-sublink"><span>Youth League</span> →</a>
+          </div>
+        </li>
+
+        <li><a href="index.html#quick-access" class="nav-link">Announcements</a></li>
+
+        <!-- Resources Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>Resources</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="resources_forms.html" class="mobile-sublink"><span>Forms</span> →</a>
+            <a href="resources_gallery.html" class="mobile-sublink"><span>Gallery</span> →</a>
+            <a href="resources_lectionary.html" class="mobile-sublink"><span>Lectionary</span> →</a>
+            <a href="resources_kalpanas.html" class="mobile-sublink"><span>Kalpanas / Circulars</span> →</a>
+            <a href="resources_worship_order.html" class="mobile-sublink"><span>Worship Order</span> →</a>
+          </div>
+        </li>
+
+        <li><a href="index.html#footer" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN PAGE WRAPPER
+       ========================================================================== -->
+  <div class="exec-page-wrapper">
+    <main id="main-content">
+
+      <!-- ==========================================================================
+           HERO SECTION
+           ========================================================================== -->
+      <section class="exec-hero-section" aria-label="Executive Committee Leadership Banner">
+        <div class="exec-hero-inner">
+          <span class="exec-hero-eyebrow">OUR LEADERSHIP</span>
+          <h1 class="exec-hero-title">Executive Committee</h1>
+          <div class="exec-hero-line"></div>
+          <p class="exec-hero-desc">Serving the parish through prayer, stewardship, leadership, administration and ministry.</p>
+        </div>
+      </section>
+
+      <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0 1.5rem;">
+
+        <!-- ==========================================================================
+             SECTION 1 — CORE COMMITTEE TABLE
+             ========================================================================== -->
+        <section class="exec-section" aria-label="Core Committee">
+          <div class="exec-section-header">
+            <h2 class="exec-section-title">Core Committee</h2>
+            <div class="exec-title-accent"></div>
+          </div>
+
+          <div class="exec-table-wrap">
+            <table class="exec-table" aria-label="Core Committee Members Table">
+              <thead>
+                <tr>
+                  <th scope="col">Designation</th>
+                  <th scope="col">Member(s)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-title">President &amp; Vicar</td>
+                  <td class="cell-name">Rev. K.A. Varghese</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Vice President</td>
+                  <td class="cell-name">Mr. Babu Koshy</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Secretary</td>
+                  <td class="cell-name">Mr. Lijo Lucose</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Trustee Finance</td>
+                  <td class="cell-name">Mr. AVM Mathew George (Retd)</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Trustee Accounts</td>
+                  <td class="cell-name">Mr. Abraham Varghese (Aby)</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Lay Leaders</td>
+                  <td class="cell-name">Mr. AJ Varghese, Mr. Cherian Thomas</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Sabha Prathinidhi Mandalam Representative</td>
+                  <td class="cell-name">Mrs. Susan Mathews</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Diocesan Assembly Representatives</td>
+                  <td class="cell-name">Mr. Benjamin Ninan, Mrs. Suja Joseph</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             SECTION 2 — ORGANIZATION REPRESENTATIVES TABLE
+             ========================================================================== -->
+        <section class="exec-section" aria-label="Organization Representatives">
+          <div class="exec-section-header">
+            <h2 class="exec-section-title">Organization Representatives</h2>
+            <div class="exec-title-accent"></div>
+          </div>
+
+          <div class="exec-table-wrap">
+            <table class="exec-table" aria-label="Organization Representatives Table">
+              <thead>
+                <tr>
+                  <th scope="col">Organization</th>
+                  <th scope="col">Representative(s)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-title">Edavaka Mission</td>
+                  <td class="cell-name">Mr. Roy Philip</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Yuvajana Sakhyam</td>
+                  <td class="cell-name">Mrs. Tasha Susan Sony</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Sevika Sangom</td>
+                  <td class="cell-name">Mrs. Jessy Wilson</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Choir</td>
+                  <td class="cell-name">Mr. Rhys Rajan</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Sunday School</td>
+                  <td class="cell-name">Mr. Ajit V Thomas</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">Internal Auditors</td>
+                  <td class="cell-name">Roxily V Abraham, Mr. Abraham Varghese (Kunjumon)</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">MT Senior Citizen Fellowship</td>
+                  <td class="cell-name">Mr. Babykutty M.M.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ==========================================================================
+             SECTION 3 — AREA PRAYER GROUP REPRESENTATIVES TABLE
+             ========================================================================== -->
+        <section class="exec-section" aria-label="Area Prayer Group Representatives">
+          <div class="exec-section-header">
+            <h2 class="exec-section-title">Area Prayer Group Representatives</h2>
+            <div class="exec-title-accent"></div>
+          </div>
+
+          <div class="exec-table-wrap">
+            <table class="exec-table" aria-label="Area Prayer Group Representatives Table">
+              <thead>
+                <tr>
+                  <th scope="col">Prayer Group</th>
+                  <th scope="col">Representative(s)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-title">ABS Prayer Group</td>
+                  <td class="cell-name">Mr. CG Mathew, Mr. Jenu Cherian</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">AHS Prayer Group</td>
+                  <td class="cell-name">Mr. Santhosh Kottanipral Mathews</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">GRD Prayer Group</td>
+                  <td class="cell-name">Mr. Mathew Thomas (Biju)</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">HRT Prayer Group</td>
+                  <td class="cell-name">Mr. Sen T Thomas, Mr. Prasanth P Koshy</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">KED Prayer Group</td>
+                  <td class="cell-name">Mr. Shibu Varghese</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">SLP Prayer Group</td>
+                  <td class="cell-name">Mr. Baiju Babu</td>
+                </tr>
+                <tr>
+                  <td class="cell-title">YIK Prayer Group</td>
+                  <td class="cell-name">Mr. Raju Abraham, Mr. Thomas Koshy</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER (Shared Reusable Component 100% Identical to Other Pages)
+       ========================================================================== -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand -->
+        <div class="footer-col footer-brand-col">
+          <img src="./assets/church_logo.png" alt="Jerusalem Mar Thoma Church Crest Logo" class="footer-brand-logo-img">
+          <div class="footer-brand-text">
+            <h2>Jerusalem Mar Thoma Church, Hebbal</h2>
+          </div>
+        </div>
+
+        <!-- Col 2: Contact Us -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <div class="footer-info-block">
+            <p>Jerusalem Mar Thoma Church</p>
+            <p>Hebbal, Bengaluru, Karnataka</p>
+            <p class="footer-contact-row"><strong>Phone:</strong> +91 98765 43210</p>
+            <p class="footer-contact-row"><strong>Email:</strong> office@jmtchebbal.org</p>
+          </div>
+        </div>
+
+        <!-- Col 3: Service Details -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Service Details</h3>
+          <div class="footer-info-block">
+            <div class="service-item">
+              <h4 class="service-name">Malayalam Service</h4>
+              <p class="service-time">Every Sunday, 8:00 AM - 9:15 AM</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-name">English Service</h4>
+              <p class="service-time">Every Sunday, 9:30 AM - 10:30 AM</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jerusalem Mar Thoma Church, Hebbal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+
+</body>
+</html>

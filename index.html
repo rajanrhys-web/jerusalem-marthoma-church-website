@@ -6,10 +6,10 @@
   <title>Jerusalem Mar Thoma Church, Hebbal | Growing in Faith, Serving in Love</title>
   <meta name="description" content="Welcome to Jerusalem Mar Thoma Church, Hebbal. A serene, welcoming parish family growing in faith, serving in love, and shining in hope.">
   
-  <!-- Google Fonts: Cormorant Garamond, Lora & Inter -->
+  <!-- Google Fonts: Lora (Display/Headings) & Inter (UI/Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
@@ -32,16 +32,117 @@
         </a>
       </div>
 
-      <!-- Center Cell: Navigation Links -->
+      <!-- Center Cell: Navigation Links with Dropdown Menus -->
       <div class="nav-grid-cell nav-grid-menu">
         <nav aria-label="Main Navigation">
           <ul class="nav-menu">
-            <li><a href="#hero" class="nav-link active">Home</a></li>
-            <li><a href="#community" class="nav-link">Organizations</a></li>
-            <li><a href="#hero-events-col" class="nav-link">Events</a></li>
-            <li><a href="#quick-access" class="nav-link">Resources</a></li>
-            <li><a href="#quick-access" class="nav-link">Gallery</a></li>
-            <li><a href="#footer" class="nav-link">Contact</a></li>
+            
+            <!-- 1. ABOUT US (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="About Us Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="our_parish.html" class="dropdown-item" role="menuitem">
+                    <span>Our Parish</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="vicar.html" class="dropdown-item" role="menuitem">
+                    <span>Vicar</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="executive_committee.html" class="dropdown-item" role="menuitem">
+                    <span>Executive Committee</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="https://cbdiocese.marthoma.in/" class="dropdown-item" role="menuitem" target="_blank" rel="noopener noreferrer">
+                    <span>Our Diocese</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 2. MINISTRIES (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>Ministries</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Ministries Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="ministries_choir.html" class="dropdown-item" role="menuitem">
+                    <span>Choir</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_edavaka_mission.html" class="dropdown-item" role="menuitem">
+                    <span>Edavaka Mission</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_senior_fellowship.html" class="dropdown-item" role="menuitem">
+                    <span>Senior Citizen Fellowship</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_sevika_sangham.html" class="dropdown-item" role="menuitem">
+                    <span>Sevika Sangham</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_sunday_school.html" class="dropdown-item" role="menuitem">
+                    <span>Sunday School</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_youth_league.html" class="dropdown-item" role="menuitem">
+                    <span>Youth League</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 3. ANNOUNCEMENTS (Single Direct Link) -->
+            <li class="nav-item">
+              <a href="#quick-access" class="nav-link">Announcements</a>
+            </li>
+
+            <!-- 4. RESOURCES (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>Resources</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Resources Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="resources_forms.html" class="dropdown-item" role="menuitem">
+                    <span>Forms</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_gallery.html" class="dropdown-item" role="menuitem">
+                    <span>Gallery</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_lectionary.html" class="dropdown-item" role="menuitem">
+                    <span>Lectionary</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_kalpanas.html" class="dropdown-item" role="menuitem">
+                    <span>Kalpanas / Circulars</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_worship_order.html" class="dropdown-item" role="menuitem">
+                    <span>Worship Order</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 5. CONTACT US (Single Direct Link) -->
+            <li class="nav-item">
+              <a href="#footer" class="nav-link">Contact</a>
+            </li>
+
           </ul>
         </nav>
       </div>
@@ -62,14 +163,59 @@
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer Panel -->
+    <!-- Mobile Navigation Drawer Panel with Accordions -->
     <div class="mobile-menu-drawer" id="mobileMenuDrawer" aria-label="Mobile Navigation">
       <ul class="mobile-menu-list">
-        <li><a href="#hero" class="nav-link">Home</a></li>
-        <li><a href="#community" class="nav-link">Organizations</a></li>
-        <li><a href="#hero-events-col" class="nav-link">Events</a></li>
-        <li><a href="#quick-access" class="nav-link">Resources & Gallery</a></li>
-        <li><a href="#footer" class="nav-link">Contact Us</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        
+        <!-- About Us Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>About Us</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="our_parish.html" class="mobile-sublink"><span>Our Parish</span> →</a>
+            <a href="vicar.html" class="mobile-sublink"><span>Vicar</span> →</a>
+            <a href="executive_committee.html" class="mobile-sublink"><span>Executive Committee</span> →</a>
+            <a href="https://cbdiocese.marthoma.in/" class="mobile-sublink" target="_blank" rel="noopener noreferrer"><span>Our Diocese</span> →</a>
+          </div>
+        </li>
+
+        <!-- Ministries Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>Ministries</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="ministries_choir.html" class="mobile-sublink"><span>Choir</span> →</a>
+            <a href="ministries_edavaka_mission.html" class="mobile-sublink"><span>Edavaka Mission</span> →</a>
+            <a href="ministries_senior_fellowship.html" class="mobile-sublink"><span>Senior Citizen Fellowship</span> →</a>
+            <a href="ministries_sevika_sangham.html" class="mobile-sublink"><span>Sevika Sangham</span> →</a>
+            <a href="ministries_sunday_school.html" class="mobile-sublink"><span>Sunday School</span> →</a>
+            <a href="ministries_youth_league.html" class="mobile-sublink"><span>Youth League</span> →</a>
+          </div>
+        </li>
+
+        <li><a href="#quick-access" class="nav-link">Announcements</a></li>
+
+        <!-- Resources Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>Resources</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="resources_forms.html" class="mobile-sublink"><span>Forms</span> →</a>
+            <a href="resources_gallery.html" class="mobile-sublink"><span>Gallery</span> →</a>
+            <a href="resources_lectionary.html" class="mobile-sublink"><span>Lectionary</span> →</a>
+            <a href="resources_kalpanas.html" class="mobile-sublink"><span>Kalpanas / Circulars</span> →</a>
+            <a href="resources_worship_order.html" class="mobile-sublink"><span>Worship Order</span> →</a>
+          </div>
+        </li>
+
+        <li><a href="#footer" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </header>

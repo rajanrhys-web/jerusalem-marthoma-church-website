@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Parish | Jerusalem Mar Thoma Church, Hebbal</title>
+  <meta name="description" content="Discover Our Parish history, spiritual journey, pastoral leadership, and former vicars at Jerusalem Mar Thoma Church, Hebbal, Bengaluru.">
+  
+  <!-- Google Fonts: Lora (Display/Headings) & Inter (UI/Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Global Pulsating Interactive Cursor / Ambient Glow Layer -->
+  <div class="global-cursor-glow" id="globalCursorGlow" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       1. HEADER / NAVIGATION (Shared Reusable Component with Active Color Indicator)
+       ========================================================================== -->
+  <header class="site-header grid-navbar" role="banner">
+    <div class="nav-grid-container">
+      
+      <!-- Left Cell: Logo & Church Name -->
+      <div class="nav-grid-cell nav-grid-brand">
+        <a href="index.html" class="brand-logo" aria-label="Jerusalem Mar Thoma Church Homepage">
+          <img src="./assets/church_logo.png" alt="Jerusalem Mar Thoma Church Crest Logo" class="brand-logo-img">
+          <span class="brand-name">JMTC, Hebbal</span>
+        </a>
+      </div>
+
+      <!-- Center Cell: Navigation Links with Dropdown Menus -->
+      <div class="nav-grid-cell nav-grid-menu">
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu">
+            
+            <!-- 1. ABOUT US (Dropdown Trigger Only - Active Parent Section in Terracotta) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger active" aria-expanded="false" aria-haspopup="true">
+                <span>About Us</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="About Us Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="our_parish.html" class="dropdown-item" role="menuitem">
+                    <span>Our Parish</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="vicar.html" class="dropdown-item" role="menuitem">
+                    <span>Vicar</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="executive_committee.html" class="dropdown-item" role="menuitem">
+                    <span>Executive Committee</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="https://cbdiocese.marthoma.in/" class="dropdown-item" role="menuitem" target="_blank" rel="noopener noreferrer">
+                    <span>Our Diocese</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 2. MINISTRIES (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>Ministries</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Ministries Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="ministries_choir.html" class="dropdown-item" role="menuitem">
+                    <span>Choir</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_edavaka_mission.html" class="dropdown-item" role="menuitem">
+                    <span>Edavaka Mission</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_senior_fellowship.html" class="dropdown-item" role="menuitem">
+                    <span>Senior Citizen Fellowship</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_sevika_sangham.html" class="dropdown-item" role="menuitem">
+                    <span>Sevika Sangham</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_sunday_school.html" class="dropdown-item" role="menuitem">
+                    <span>Sunday School</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="ministries_youth_league.html" class="dropdown-item" role="menuitem">
+                    <span>Youth League</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 3. ANNOUNCEMENTS (Single Direct Link) -->
+            <li class="nav-item">
+              <a href="index.html#quick-access" class="nav-link">Announcements</a>
+            </li>
+
+            <!-- 4. RESOURCES (Dropdown Trigger Only) -->
+            <li class="nav-item has-dropdown">
+              <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+                <span>Resources</span>
+                <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="dropdown-panel" role="menu" aria-label="Resources Submenu">
+                <div class="dropdown-menu-list">
+                  <a href="resources_forms.html" class="dropdown-item" role="menuitem">
+                    <span>Forms</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_gallery.html" class="dropdown-item" role="menuitem">
+                    <span>Gallery</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_lectionary.html" class="dropdown-item" role="menuitem">
+                    <span>Lectionary</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_kalpanas.html" class="dropdown-item" role="menuitem">
+                    <span>Kalpanas / Circulars</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                  <a href="resources_worship_order.html" class="dropdown-item" role="menuitem">
+                    <span>Worship Order</span>
+                    <svg class="dropdown-arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <!-- 5. CONTACT US (Single Direct Link) -->
+            <li class="nav-item">
+              <a href="index.html#footer" class="nav-link">Contact</a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Right Cell: Header Actions (Dark Mode Toggle & Hamburger) -->
+      <div class="nav-grid-cell nav-grid-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger-toggle" id="hamburgerBtn" aria-label="Open navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer Panel with Accordions -->
+    <div class="mobile-menu-drawer" id="mobileMenuDrawer" aria-label="Mobile Navigation">
+      <ul class="mobile-menu-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        
+        <!-- About Us Accordion -->
+        <li class="mobile-accordion-item open">
+          <button class="mobile-accordion-trigger">
+            <span>About Us</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="our_parish.html" class="mobile-sublink" style="color:#D89169; font-weight:600;"><span>Our Parish</span> →</a>
+            <a href="vicar.html" class="mobile-sublink"><span>Vicar</span> →</a>
+            <a href="executive_committee.html" class="mobile-sublink"><span>Executive Committee</span> →</a>
+            <a href="https://cbdiocese.marthoma.in/" class="mobile-sublink" target="_blank" rel="noopener noreferrer"><span>Our Diocese</span> →</a>
+          </div>
+        </li>
+
+        <!-- Ministries Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>Ministries</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="ministries_choir.html" class="mobile-sublink"><span>Choir</span> →</a>
+            <a href="ministries_edavaka_mission.html" class="mobile-sublink"><span>Edavaka Mission</span> →</a>
+            <a href="ministries_senior_fellowship.html" class="mobile-sublink"><span>Senior Citizen Fellowship</span> →</a>
+            <a href="ministries_sevika_sangham.html" class="mobile-sublink"><span>Sevika Sangham</span> →</a>
+            <a href="ministries_sunday_school.html" class="mobile-sublink"><span>Sunday School</span> →</a>
+            <a href="ministries_youth_league.html" class="mobile-sublink"><span>Youth League</span> →</a>
+          </div>
+        </li>
+
+        <li><a href="index.html#quick-access" class="nav-link">Announcements</a></li>
+
+        <!-- Resources Accordion -->
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-trigger">
+            <span>Resources</span>
+            <svg class="mobile-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="mobile-accordion-panel">
+            <a href="resources_forms.html" class="mobile-sublink"><span>Forms</span> →</a>
+            <a href="resources_gallery.html" class="mobile-sublink"><span>Gallery</span> →</a>
+            <a href="resources_lectionary.html" class="mobile-sublink"><span>Lectionary</span> →</a>
+            <a href="resources_kalpanas.html" class="mobile-sublink"><span>Kalpanas / Circulars</span> →</a>
+            <a href="resources_worship_order.html" class="mobile-sublink"><span>Worship Order</span> →</a>
+          </div>
+        </li>
+
+        <li><a href="index.html#footer" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="parish-page-wrapper">
+    <main id="main-content">
+      
+      <!-- ==========================================================================
+           SECTION 1 — HERO BANNER
+           ========================================================================== -->
+      <section class="parish-hero" aria-label="Our Parish Hero Banner">
+        <img src="./assets/church_hero_1785997944826.jpg" alt="Jerusalem Mar Thoma Church Exterior" class="parish-hero-img">
+        <div class="parish-hero-overlay"></div>
+        <div class="parish-hero-content">
+          <div class="parish-breadcrumb">About Us / Our Parish</div>
+          <h1 class="parish-hero-title">Our Parish</h1>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           SECTION 2 — OUR PARISH (Two-Column + Service Timings Sub-Block + Facts Strip)
+           ========================================================================== -->
+      <section class="parish-section our-story-section" aria-label="Our Parish Overview">
+        <div class="parish-container">
+          <div class="our-story-grid">
+            
+            <!-- Left Column: Story Text & Service Timings Sub-Block -->
+            <div class="our-story-text-col">
+              <span class="our-story-eyebrow">OUR PARISH</span>
+              <h2 class="our-story-title">A vibrant worshipping community since 1990</h2>
+              <div class="our-story-text">
+                <p>Jerusalem Mar Thoma Church, Hebbal, Bengaluru is a parish of the Mar Thoma Syrian Church of Malabar under the Chennai–Bangalore Diocese. Since its beginning in 1990, the parish has prayerfully grown into a vibrant worshipping community serving families across North Bengaluru.</p>
+                <p>We celebrate Holy Communion every Sunday at 8:00 AM (Malayalam) and 10:30 AM (English).</p>
+              </div>
+
+              <!-- Service Timings Sub-Block (Minimal Compact 2-Column Card) -->
+              <div class="service-timings-card">
+                <div class="service-timings-header">
+                  <div class="service-clock-icon-wrap">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F7AF63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="9"/>
+                      <polyline points="12 7 12 12 15 14"/>
+                    </svg>
+                  </div>
+                  <h3 class="service-timings-title">Service Timings</h3>
+                </div>
+                
+                <div class="service-timing-rows">
+                  <div class="service-timing-row">
+                    <div class="timing-left-col">
+                      <span class="timing-day">1st, 2nd, 3rd & 5th Sunday</span>
+                      <span class="timing-desc">Holy Communion (Malayalam)</span>
+                    </div>
+                    <span class="timing-time">8:00 AM</span>
+                  </div>
+                  
+                  <div class="service-timing-row">
+                    <div class="timing-left-col">
+                      <span class="timing-day">4th Sunday</span>
+                      <span class="timing-desc">Holy Communion (English)</span>
+                    </div>
+                    <span class="timing-time">8:00 AM</span>
+                  </div>
+                  
+                  <div class="service-timing-row">
+                    <div class="timing-left-col">
+                      <span class="timing-day">2nd Saturday</span>
+                      <span class="timing-desc">Short Holy Communion (Malayalam) - for seniors</span>
+                    </div>
+                    <span class="timing-time">8:00 AM</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Church Interior Photo -->
+            <div class="our-story-img-col">
+              <div class="our-story-image-wrap">
+                <img src="./assets/church_interior_1785997991930.jpg" alt="Jerusalem Mar Thoma Church Sanctuary Interior" class="our-story-img">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Facts Strip Below Section 2 -->
+          <div class="parish-facts-strip">
+            <div class="fact-item">
+              <div class="fact-number">229</div>
+              <div class="fact-label">Families</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-number">~814</div>
+              <div class="fact-label">Members</div>
+            </div>
+            <div class="fact-item">
+              <div class="fact-number">7</div>
+              <div class="fact-label">Prayer Groups</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           SECTION 3 — PASTORAL LEADERSHIP
+           ========================================================================== -->
+      <section class="parish-section pastoral-section" id="leadership" aria-label="Pastoral Leadership">
+        <div class="parish-container">
+          
+          <div class="pastoral-header">
+            <span class="pastoral-eyebrow">LEADERSHIP</span>
+            <h2 class="pastoral-title">Pastoral Leadership</h2>
+            <div class="pastoral-ornament">
+              <span class="pastoral-dot"></span>
+            </div>
+            <p class="pastoral-subtitle">The parish is prayerfully guided through spiritual leadership rooted in worship, pastoral care, and Christian fellowship.</p>
+          </div>
+
+          <div class="pastoral-cards-grid">
+            
+            <!-- Card 1: Diocesan Bishop -->
+            <div class="pastoral-card">
+              <img src="./assets/diocesan_bishop_portrait.png" alt="Rt. Rev. Dr. Gregorios Mar Stephanos Episcopa — Diocesan Bishop" class="pastoral-card-img">
+              <div class="pastoral-card-overlay">
+                <h3 class="pastoral-card-name">Rt. Rev. Dr. Gregorios Mar Stephanos Episcopa</h3>
+                <span class="pastoral-card-role">Diocesan Bishop</span>
+              </div>
+            </div>
+
+            <!-- Card 2: Vicar -->
+            <div class="pastoral-card">
+              <img src="./assets/vicar_ka_varghese.png" alt="Rev. K. A. Varghese — Vicar" class="pastoral-card-img">
+              <div class="pastoral-card-overlay">
+                <h3 class="pastoral-card-name">Rev. K. A. Varghese</h3>
+                <span class="pastoral-card-role">Vicar</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           SECTION 4 — PARISH HISTORY (Real Historical Milestones Timeline)
+           ========================================================================== -->
+      <section class="parish-section history-section" aria-label="Parish History">
+        <div class="parish-container">
+          
+          <div class="history-header">
+            <h2 class="history-title">Parish History</h2>
+            <div class="pastoral-ornament">
+              <span class="pastoral-dot"></span>
+            </div>
+            <p class="pastoral-subtitle" style="margin-top: 0.5rem;">The humble beginnings of our parish and the journey of faith that shaped it.</p>
+          </div>
+
+          <div class="history-timeline-container">
+            <div class="history-timeline-line"></div>
+
+            <!-- Milestone 1: 1990 (Left) -->
+            <div class="history-item left">
+              <div class="history-dot"></div>
+              <div class="history-year">1990</div>
+              <h3 class="history-item-heading">Formation of the Parish</h3>
+              <p class="history-desc">A joint meeting on 11 December 1990 of members from three Bangalore Mar Thoma parishes led the Hebbal and J.C. Nagar prayer groups to initiate a new parish. With the blessing of Rt. Rev. Dr. Geevarghese Mar Theodosius, the Bangalore North Congregation was constituted; worship began at R.T. Nagar under Rev. M. S. Skariah.</p>
+            </div>
+
+            <!-- Milestone 2: 1991 (Right) -->
+            <div class="history-item right">
+              <div class="history-dot"></div>
+              <div class="history-year">1991</div>
+              <h3 class="history-item-heading">Independent Parish Status</h3>
+              <p class="history-desc">A 110×65 ft plot was acquired on Kempapura Road, Hebbal, through Late Rev. K. Thomas, and a 22×40 ft chapel was built. The congregation was elevated to an independent parish on 1 August 1991, with Late Rev. K. Thomas as first Vicar.</p>
+            </div>
+
+            <!-- Milestone 3: 1992 (Left) -->
+            <div class="history-item left">
+              <div class="history-dot"></div>
+              <div class="history-year">1992</div>
+              <h3 class="history-item-heading">Foundation Stone Laid</h3>
+              <p class="history-desc">The foundation stone for the present church was laid on 8 May 1992 by Rt. Rev. Dr. Geevarghese Mar Theodosius Episcopa.</p>
+            </div>
+
+            <!-- Milestone 4: 1993 (Right) -->
+            <div class="history-item right">
+              <div class="history-dot"></div>
+              <div class="history-year">1993</div>
+              <h3 class="history-item-heading">Basement Hall Dedicated</h3>
+              <p class="history-desc">The basement hall was dedicated on 18 March 1993, and worship continued there as the main church rose above.</p>
+            </div>
+
+            <!-- Milestone 5: 1994 (Left) -->
+            <div class="history-item left">
+              <div class="history-dot"></div>
+              <div class="history-year">1994</div>
+              <h3 class="history-item-heading">Main Church Dedicated</h3>
+              <p class="history-desc">The main church was dedicated on 21 May 1994 by Most Rev. Dr. Alexander Mar Thoma Metropolitan, assisted by Rt. Rev. Dr. Philipose Mar Chrysostom, Rt. Rev. Dr. Geevarghese Mar Theodosius and Rt. Rev. Thomas Mar Timotheos, with faithful from all Bangalore parishes.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           SECTION 5 — FORMER VICARS (Carousel with 12 Vicars Cards)
+           ========================================================================== -->
+      <section class="parish-section vicars-section" aria-label="Former Vicars">
+        <div class="parish-container">
+          
+          <div class="vicars-header">
+            <h2 class="vicars-title">Former Vicars</h2>
+            <div class="pastoral-ornament">
+              <span class="pastoral-dot"></span>
+            </div>
+          </div>
+
+          <!-- Former Vicars Carousel Container -->
+          <div class="vicars-carousel-container">
+            <div class="vicars-carousel-viewport" id="vicarsViewport">
+              <div class="vicars-carousel-track" id="vicarsTrack">
+                
+                <!-- Vicar 1 -->
+                <div class="vicar-card" data-vicar-id="1" role="button" tabindex="0" aria-label="View details for Rev. K. Thomas (Late)">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_1_k_thomas.png" alt="Rev. K. Thomas (Late)" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. K. Thomas (Late)">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. K. Thomas (Late)</h3>
+                    <span class="vicar-card-years">1991 – 1995</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 2 -->
+                <div class="vicar-card" data-vicar-id="2" role="button" tabindex="0" aria-label="View details for Rev. Dr. K. A. Abraham">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_2_ka_abraham.png" alt="Rev. Dr. K. A. Abraham" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. Dr. K. A. Abraham">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. Dr. K. A. Abraham</h3>
+                    <span class="vicar-card-years">1995 – 1996</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 3 -->
+                <div class="vicar-card" data-vicar-id="3" role="button" tabindex="0" aria-label="View details for Rev. Dr. Abraham Zachariah">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_3_abraham_zachariah.png" alt="Rev. Dr. Abraham Zachariah" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. Dr. Abraham Zachariah">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. Dr. Abraham Zachariah</h3>
+                    <span class="vicar-card-years">1996 – 1997</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 4 -->
+                <div class="vicar-card" data-vicar-id="4" role="button" tabindex="0" aria-label="View details for Rev. K. C. George">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_4_kc_george.png" alt="Rev. K. C. George" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. K. C. George">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. K. C. George</h3>
+                    <span class="vicar-card-years">1997 – 1999</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 5 -->
+                <div class="vicar-card" data-vicar-id="5" role="button" tabindex="0" aria-label="View details for Rev. Thomas Mathew (Late)">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_5_thomas_mathew.png" alt="Rev. Thomas Mathew (Late)" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. Thomas Mathew (Late)">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. Thomas Mathew (Late)</h3>
+                    <span class="vicar-card-years">1999 – 2004</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 6 -->
+                <div class="vicar-card" data-vicar-id="6" role="button" tabindex="0" aria-label="View details for Rev. Mathew Baby">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_6_mathew_baby.png" alt="Rev. Mathew Baby" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. Mathew Baby">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. Mathew Baby</h3>
+                    <span class="vicar-card-years">2004 – 2006</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 7 -->
+                <div class="vicar-card" data-vicar-id="7" role="button" tabindex="0" aria-label="View details for Rev. C. K. Titus">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_7_ck_titus.png" alt="Rev. C. K. Titus" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. C. K. Titus">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. C. K. Titus</h3>
+                    <span class="vicar-card-years">2006 – 2009</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 8 -->
+                <div class="vicar-card" data-vicar-id="8" role="button" tabindex="0" aria-label="View details for Rev. A. John George">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_8_john_george.png" alt="Rev. A. John George" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. A. John George">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. A. John George</h3>
+                    <span class="vicar-card-years">2009 – 2012</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 9 -->
+                <div class="vicar-card" data-vicar-id="9" role="button" tabindex="0" aria-label="View details for Rev. Thomas John A">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_9_thomas_john.png" alt="Rev. Thomas John A" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. Thomas John A">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. Thomas John A</h3>
+                    <span class="vicar-card-years">2012 – 2015</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 10 -->
+                <div class="vicar-card" data-vicar-id="10" role="button" tabindex="0" aria-label="View details for Rev. Varghese Mathew">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_10_varghese_mathew.png" alt="Rev. Varghese Mathew" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. Varghese Mathew">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. Varghese Mathew</h3>
+                    <span class="vicar-card-years">2015 – 2019</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 11 -->
+                <div class="vicar-card" data-vicar-id="11" role="button" tabindex="0" aria-label="View details for Rev. Prince Korah (Late)">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_11_prince_korah.png" alt="Rev. Prince Korah (Late)" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. Prince Korah (Late)">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. Prince Korah (Late)</h3>
+                    <span class="vicar-card-years">2019 – 2023</span>
+                  </div>
+                </div>
+
+                <!-- Vicar 12 -->
+                <div class="vicar-card" data-vicar-id="12" role="button" tabindex="0" aria-label="View details for Rev. Shinu Baby">
+                  <div class="vicar-card-photo-wrap">
+                    <img src="./assets/vicar_12_shinu_baby.png" alt="Rev. Shinu Baby" class="vicar-card-img">
+                    <button class="vicar-expand-btn" aria-label="Expand details for Rev. Shinu Baby">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                    </button>
+                  </div>
+                  <div class="vicar-card-info">
+                    <h3 class="vicar-card-name">Rev. Shinu Baby</h3>
+                    <span class="vicar-card-years">2023 – 2025</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Standardized Floating Navigation Dock -->
+            <div class="gallery-nav-dock">
+              <button class="gallery-nav-cell cell-left" id="vicarsPrev" aria-label="Previous page" title="Previous page">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>
+              </button>
+              
+              <div class="gallery-nav-cell cell-center">
+                <div class="community-progress-bar-wrap" aria-live="polite" aria-atomic="true">
+                  <span class="community-numeral" id="vicarsCurrentIndex">01</span>
+                  <div class="community-progress-track">
+                    <div class="community-progress-fill" id="vicarsProgressFill" style="width: 33.33%;"></div>
+                  </div>
+                  <span class="community-numeral" id="vicarsTotalSlides">03</span>
+                </div>
+              </div>
+              
+              <button class="gallery-nav-cell cell-right" id="vicarsNext" aria-label="Next page" title="Next page">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Vicar Detail Modal Container -->
+  <div class="vicar-modal-overlay" id="vicarModalOverlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="vicar-modal-container" id="vicarModalContainer">
+      <div class="vicar-modal-header">
+        <div class="vicar-modal-header-text" id="modalHeaderText"></div>
+        <button class="vicar-modal-close-btn" id="modalCloseBtn" aria-label="Close details popup">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="vicar-modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER (Shared Reusable Component)
+       ========================================================================== -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand -->
+        <div class="footer-col footer-brand-col">
+          <img src="./assets/church_logo.png" alt="Jerusalem Mar Thoma Church Crest Logo" class="footer-brand-logo-img">
+          <div class="footer-brand-text">
+            <h2>Jerusalem Mar Thoma Church, Hebbal</h2>
+          </div>
+        </div>
+
+        <!-- Col 2: Contact Us -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <div class="footer-info-block">
+            <p>Jerusalem Mar Thoma Church</p>
+            <p>Hebbal, Bengaluru, Karnataka</p>
+            <p class="footer-contact-row"><strong>Phone:</strong> +91 98765 43210</p>
+            <p class="footer-contact-row"><strong>Email:</strong> office@jmtchebbal.org</p>
+          </div>
+        </div>
+
+        <!-- Col 3: Service Details -->
+        <div class="footer-col">
+          <h3 class="footer-col-title">Service Details</h3>
+          <div class="footer-info-block">
+            <div class="service-item">
+              <h4 class="service-name">Malayalam Service</h4>
+              <p class="service-time">Every Sunday, 8:00 AM - 9:15 AM</p>
+            </div>
+            <div class="service-item">
+              <h4 class="service-name">English Service</h4>
+              <p class="service-time">Every Sunday, 9:30 AM - 10:30 AM</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jerusalem Mar Thoma Church, Hebbal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="main.js"></script>
+
+  <!-- Former Vicars Carousel & Detail Modal Controller Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Vicars Data Array
+      const vicarsData = [
+        {
+          id: 1,
+          name: "Rev. K. Thomas (Late)",
+          years: "1991 – 1995",
+          isDeceased: true,
+          photo: "./assets/vicar_1_k_thomas.png",
+          dateOfPassing: "20 August 2016",
+          dob: "22-08-1927",
+          semmash: "16-07-1954",
+          kasseessa: "28-10-1954",
+          education: "",
+          parents: "Mr. Mathew, Kuzhimannil",
+          wife: "Mrs. Annamma",
+          children: "Elizabeth Nirmala and Dr. Mathew Santhosh",
+          address: "Kuzhimannil, A-38, Indira Nagar, Devalokam P.O, Kottayam",
+          servedIn: "Thumpamon Immanuel; Thumpamon Sehion; Elavumthitta; Coonnoor; Karthikapally; Parimanam; Pallippad; Akamkudy; Kozhikod; Thamarasserry; Pulikayam; Cherukole; Chennithala; Madras; Mavelikara; Kurathikad; Punnamood; Kallimel; Kottayam Jerusalem; Singapore; Trivandrum Trinity.",
+          specialPosts: "MTEA Travelling Secretary; Bible Society Kerala Auxiliary Secretary; Bible Society General Secretary; Kunnamkulam Malabar Diocesan & Bishop's Secretary."
+        },
+        {
+          id: 2,
+          name: "Rev. Dr. K. A. Abraham",
+          headerName: "Abraham K. A. (Chelakombu)",
+          years: "1995 – 1996",
+          isDeceased: false,
+          photo: "./assets/vicar_2_ka_abraham.png",
+          dob: "27 October",
+          designation: "Secretary",
+          establishment: "Retired Clergy Fellowship",
+          diocese: "Niranam – Maramon Diocese",
+          centre: "Tiruvalla East Centre",
+          homeParish: "Chelakombu St Johns Mar Thoma Church",
+          address: "Kaduthanathu, Kizhakkenmuthur, Kuttapuzha PO, Pathanamthitta Dist., Keralam, India, PIN-689103",
+          mobile1: "9995207600",
+          mobile2: "9995107600",
+          email: "kaabrahamachen@gmail.com"
+        },
+        {
+          id: 3,
+          name: "Rev. Dr. Abraham Zachariah",
+          headerName: "Abraham Zachariah K.",
+          years: "1996 – 1997",
+          isDeceased: false,
+          photo: "./assets/vicar_3_abraham_zachariah.png",
+          dob: "06 September",
+          designation: "Retired Clergy",
+          establishment: "Niranam – Maramon Diocese",
+          diocese: "Niranam – Maramon Diocese",
+          centre: "Tiruvalla West Centre",
+          homeParish: "Maramon Mar Thoma Church",
+          address: "Kizhakkel Manakkandathil House, P.O Box No. 12, Thottapuzhassery, Maramon PO, Pathanamthitta Dist., Keralam, India, PIN-689549",
+          mobile1: "9447364490",
+          mobile2: "4692660031",
+          email: "revazcounsellor@gmail.com"
+        },
+        {
+          id: 4,
+          name: "Rev. K. C. George",
+          headerName: "George K. C.",
+          years: "1997 – 1999",
+          isDeceased: false,
+          photo: "./assets/vicar_4_kc_george.png",
+          dob: "13 February",
+          designation: "Retired Clergy",
+          establishment: "Chennai – Bangalore Diocese",
+          diocese: "Chennai – Bangalore Diocese",
+          centre: "Chennai Centre",
+          homeParish: "Thumpamon Bethel Mar Thoma Church",
+          address: "101, S.P. Pride, Anniah Reddy Layout, 10th B Main, Banaswadi S.O, Bengaluru, Karnataka, India, PIN-560043",
+          mobile1: "8197318202",
+          mobile2: "9620680602",
+          email: "revkcgeorge@yahoo.com"
+        },
+        {
+          id: 5,
+          name: "Rev. Thomas Mathew (Late)",
+          years: "1999 – 2004",
+          isDeceased: true,
+          photo: "./assets/vicar_5_thomas_mathew.png",
+          dateOfPassing: "April 2013",
+          dob: "05-11-1966",
+          semmash: "",
+          kasseessa: "06-07-1993",
+          education: "M.Sc. Maths, Th.M.",
+          parents: "Mr. M. Thomas and Mrs. Aleyamma",
+          wife: "Mrs. Maya Rachel (B.Sc., B.Ed, Masters in Rural Development – Teacher; D/O Mr. Thomas Varghese & Mrs. Sreemathy, Kaviyoor – Kaviyoor Salem MTC)",
+          children: "Ms. Christeena Elizabeth Mathew; Mr. Edwin Thomas Mathew",
+          address: "Kooppil, Punnala P.O, Kollam, 689706",
+          servedIn: "Jodhpur–Bickaneer; Thumpamon Bethel; Toronto St. Mathews; New Delhi Ebenezer; Mumbai Goregavu St. Peters; Pune St. Peters (2012–2013).",
+          specialPosts: "Kombady E.J. Institute Warden & Teacher; Kombady A.M.M. Bible Institute Teacher; Faridabad Dharma Jyothi Vidya Peed Teacher; Diocesan Council Member of USA."
+        },
+        {
+          id: 6,
+          name: "Rev. Mathew Baby",
+          headerName: "Mathew Baby",
+          years: "2004 – 2006",
+          isDeceased: false,
+          photo: "./assets/vicar_6_mathew_baby.png",
+          dob: "14 October",
+          designation: "Administrator",
+          establishment: "Mar Thoma College for Hearing Impaired; Mar Thoma School for Deaf, Kasargod; Kasargod St Thomas Mar Thoma Church",
+          diocese: "Kunnamkulam – Malabar Diocese",
+          centre: "Neduvaloor Centre",
+          homeParish: "Mavelikkara Mar Thoma Church",
+          address: "Administrator, Mar Thoma Institutions for the Deaf, Cherkala, Chengala P.O., Kasaragod Dist., Keralam, India, PIN-671541",
+          mobile1: "9747245926",
+          mobile2: "",
+          email: "mathewbabyachen@gmail.com"
+        },
+        {
+          id: 7,
+          name: "Rev. C. K. Titus",
+          headerName: "Titus C. K.",
+          years: "2006 – 2009",
+          isDeceased: false,
+          photo: "./assets/vicar_7_ck_titus.png",
+          dob: "31 August",
+          designation: "Retired Clergy",
+          establishment: "Thiruvananthapuram – Kollam Diocese",
+          diocese: "Thiruvananthapuram – Kollam Diocese",
+          centre: "Trivandrum Centre",
+          homeParish: "Odanavattom Mar Thoma Church",
+          address: "Titus Mandiram, 19A, PPD Emerald Hills, Plathara, Vattappara, Venkode P.O., Thiruvananthapuram, Keralam, India, PIN-695028",
+          mobile1: "9497271607",
+          mobile2: "8848895036",
+          email: "revcktitus@gmail.com"
+        },
+        {
+          id: 8,
+          name: "Rev. A. John George",
+          headerName: "John George A.",
+          years: "2009 – 2012",
+          isDeceased: false,
+          photo: "./assets/vicar_8_john_george.png",
+          dob: "18 November",
+          designation: "Vicar",
+          establishment: "Panvel St Peters Mar Thoma Church",
+          diocese: "Mumbai Diocese",
+          centre: "Navi Mumbai Centre",
+          homeParish: "Dadar Mar Thoma Church",
+          address: "Panvel St Peters Mar Thoma Church, Plot No.7, Sector 5A, New Panvel (E), Navi Mumbai, Panvel HO PO, Raigarh Dist., Maharashtra, India, PIN-410206",
+          mobile1: "9980880260",
+          mobile2: "",
+          email: "johngeorgeachen@gmail.com"
+        },
+        {
+          id: 9,
+          name: "Rev. Thomas John A",
+          headerName: "Thomas John A.",
+          years: "2012 – 2015",
+          isDeceased: false,
+          photo: "./assets/vicar_9_thomas_john.png",
+          dob: "03 November",
+          designation: "Retired Clergy",
+          establishment: "Niranam – Maramon Diocese",
+          diocese: "Niranam – Maramon Diocese",
+          centre: "Tiruvalla West Centre",
+          homeParish: "Koorthamala Mar Thoma Church",
+          address: "Adappanam Kandathil, Kadapra P.O, Kumbanad, Pathanamthitta Dist., Keralam, India, PIN-689547",
+          mobile1: "9383431099",
+          mobile2: "9656305125",
+          email: "revthomasjohna@gmail.com"
+        },
+        {
+          id: 10,
+          name: "Rev. Varghese Mathew",
+          headerName: "Varghese Mathew (Kalyan)",
+          years: "2015 – 2019",
+          isDeceased: false,
+          photo: "./assets/vicar_10_varghese_mathew.png",
+          dob: "13 August",
+          designation: "Vicar",
+          establishment: "Thane Mar Thoma Church, Shahpur Mission",
+          diocese: "Mumbai Diocese",
+          centre: "Kalyan Centre",
+          homeParish: "Kalyan West Mar Thoma Syrian Church",
+          address: "Majiwada-Balkum Road, Near MSEB Substation, Majiwada, Thane (W) PO, Thane Dist., Maharashtra, India, PIN-400601",
+          mobile1: "9447818606",
+          mobile2: "9483542353",
+          email: "rejikalyan@yahoo.com"
+        },
+        {
+          id: 11,
+          name: "Rev. Prince Korah (Late)",
+          years: "2019 – 2023",
+          isDeceased: true,
+          photo: "./assets/vicar_11_prince_korah.png",
+          dateOfPassing: "1 December 2024",
+          dob: "29-05-1974",
+          semmash: "21-06-2003",
+          kasseessa: "09-07-2003",
+          education: "",
+          parents: "",
+          wife: "Mrs. Annie Prince",
+          children: "Ms. Nanma Anna Prince, Ms. Neethi Mariam Prince",
+          address: "Mullasseril House, Kalathilpady, Kottayam",
+          servedIn: "Missionary Vadattupara; Kuttampuzha; Poika; Mamala Kandam; Punnekkad; Pooyamkutty; Pashampallichal; Surat School; Ankaleswar Jerusalem; Kuwait; New Delhi St. Johns School Principal; Gurgaon St. Thomas MTC Vicar; Hebbal Jerusalem; Madras St. Thomas Mount",
+          specialPosts: ""
+        },
+        {
+          id: 12,
+          name: "Rev. Shinu Baby",
+          headerName: "Shinu Baby",
+          years: "2023 – 2025",
+          isDeceased: false,
+          photo: "./assets/vicar_12_shinu_baby.png",
+          dob: "02 January",
+          designation: "Higher Studies",
+          establishment: "United Theological College Bangalore",
+          diocese: "Chennai – Bangalore Diocese",
+          centre: "Bangalore Centre",
+          homeParish: "Sooranadu Immanuel Mar Thoma Church",
+          address: "Benson Town, J. C. Nagar P.O., Bengaluru, Karnataka, India, PIN-560006",
+          mobile1: "9740523393",
+          mobile2: "",
+          email: "shinubobby88@yahoo.com"
+        }
+      ];
+
+      // 2. Carousel Controller
+      const vicarsTrack = document.getElementById('vicarsTrack');
+      const vicarsViewport = document.getElementById('vicarsViewport');
+      const vicarsPrev = document.getElementById('vicarsPrev');
+      const vicarsNext = document.getElementById('vicarsNext');
+      const vicarsCurrentIndex = document.getElementById('vicarsCurrentIndex');
+      const vicarsTotalSlides = document.getElementById('vicarsTotalSlides');
+      const vicarsProgressFill = document.getElementById('vicarsProgressFill');
+      const vicarCards = document.querySelectorAll('.vicar-card');
+      
+      let currentPage = 0;
+      
+      function getCardsPerPage() {
+        const width = window.innerWidth;
+        if (width >= 1024) return 4;
+        if (width >= 768) return 2;
+        return 1;
+      }
+      
+      function updateVicarsCarousel() {
+        if (!vicarsTrack || vicarCards.length === 0) return;
+        const cardsPerPage = getCardsPerPage();
+        const totalCards = vicarCards.length;
+        const totalPages = Math.ceil(totalCards / cardsPerPage);
+        
+        if (currentPage >= totalPages) currentPage = totalPages - 1;
+        if (currentPage < 0) currentPage = 0;
+        
+        const viewportWidth = vicarsViewport.getBoundingClientRect().width;
+        const gap = 24;
+        const moveX = currentPage * (viewportWidth + gap);
+        
+        vicarsTrack.style.transform = `translateX(-${moveX}px)`;
+        
+        if (vicarsCurrentIndex) vicarsCurrentIndex.textContent = String(currentPage + 1).padStart(2, '0');
+        if (vicarsTotalSlides) vicarsTotalSlides.textContent = String(totalPages).padStart(2, '0');
+        if (vicarsProgressFill) vicarsProgressFill.style.width = `${((currentPage + 1) / totalPages) * 100}%`;
+        
+        if (vicarsPrev) {
+          if (currentPage === 0) {
+            vicarsPrev.style.opacity = '0.35';
+            vicarsPrev.style.cursor = 'not-allowed';
+            vicarsPrev.style.pointerEvents = 'none';
+          } else {
+            vicarsPrev.style.opacity = '1';
+            vicarsPrev.style.cursor = 'pointer';
+            vicarsPrev.style.pointerEvents = 'auto';
+          }
+        }
+        
+        if (vicarsNext) {
+          if (currentPage >= totalPages - 1) {
+            vicarsNext.style.opacity = '0.35';
+            vicarsNext.style.cursor = 'not-allowed';
+            vicarsNext.style.pointerEvents = 'none';
+          } else {
+            vicarsNext.style.opacity = '1';
+            vicarsNext.style.cursor = 'pointer';
+            vicarsNext.style.pointerEvents = 'auto';
+          }
+        }
+      }
+      
+      if (vicarsNext) {
+        vicarsNext.addEventListener('click', () => {
+          const totalPages = Math.ceil(vicarCards.length / getCardsPerPage());
+          if (currentPage < totalPages - 1) {
+            currentPage++;
+            updateVicarsCarousel();
+          }
+        });
+      }
+      
+      if (vicarsPrev) {
+        vicarsPrev.addEventListener('click', () => {
+          if (currentPage > 0) {
+            currentPage--;
+            updateVicarsCarousel();
+          }
+        });
+      }
+      
+      window.addEventListener('resize', updateVicarsCarousel);
+      updateVicarsCarousel();
+
+      // 3. Detail Popup Modal Controller
+      const modalOverlay = document.getElementById('vicarModalOverlay');
+      const modalHeader = document.getElementById('modalHeaderText');
+      const modalBody = document.getElementById('modalBody');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+      function openVicarModal(vicarId) {
+        const vicar = vicarsData.find(v => v.id === parseInt(vicarId, 10));
+        if (!vicar) return;
+
+        // Build Header
+        if (vicar.isDeceased) {
+          const cleanTitle = vicar.name.replace(' (Late)', '').trim();
+          modalHeader.innerHTML = `
+            <h3 class="vicar-modal-title">✝ ${cleanTitle}</h3>
+            <p class="vicar-modal-subtitle">Served JMTC Hebbal (${vicar.years})</p>
+            <p class="vicar-modal-passing">Date of Passing: ${vicar.dateOfPassing}</p>
+          `;
+        } else {
+          modalHeader.innerHTML = `
+            <h3 class="vicar-modal-title">${vicar.headerName || vicar.name}</h3>
+            <p class="vicar-modal-subtitle">Served JMTC Hebbal (${vicar.years})</p>
+          `;
+        }
+
+        // Helper to generate group HTML only if value exists
+        function buildGroup(label, val) {
+          if (!val || val.trim() === '') return '';
+          return `
+            <div class="vicar-detail-group">
+              <span class="vicar-detail-label">${label}</span>
+              <span class="vicar-detail-val">${val}</span>
+            </div>
+          `;
+        }
+
+        let bodyHTML = `
+          <div class="vicar-modal-grid">
+            <div class="vicar-modal-photo-wrap">
+              <img src="${vicar.photo}" alt="${vicar.name}" class="vicar-modal-photo-img">
+            </div>
+            <div class="vicar-modal-details">
+        `;
+
+        if (vicar.isDeceased) {
+          bodyHTML += buildGroup("Date of Birth", vicar.dob);
+          bodyHTML += buildGroup("Ordained as Semmash", vicar.semmash);
+          bodyHTML += buildGroup("Ordained as Kasseessa", vicar.kasseessa);
+          bodyHTML += buildGroup("Education", vicar.education);
+          bodyHTML += buildGroup("Parents", vicar.parents);
+          bodyHTML += buildGroup("Wife", vicar.wife);
+          bodyHTML += buildGroup("Children", vicar.children);
+          bodyHTML += buildGroup("Address", vicar.address);
+          bodyHTML += buildGroup("Served In", vicar.servedIn);
+          bodyHTML += buildGroup("Special Posts / Responsibilities", vicar.specialPosts);
+        } else {
+          bodyHTML += buildGroup("Date of Birth", vicar.dob);
+          bodyHTML += buildGroup("Designation", vicar.designation);
+          bodyHTML += buildGroup("Establishment(s)", vicar.establishment);
+          bodyHTML += buildGroup("Diocese", vicar.diocese);
+          bodyHTML += buildGroup("Centre", vicar.centre);
+          bodyHTML += buildGroup("Home Parish", vicar.homeParish);
+          
+          if (vicar.address) {
+            const encodedAddr = encodeURIComponent(vicar.address);
+            bodyHTML += `
+              <div class="vicar-detail-group">
+                <span class="vicar-detail-label">Address</span>
+                <span class="vicar-detail-val">${vicar.address}</span>
+                <div>
+                  <a href="https://maps.google.com/?q=${encodedAddr}" target="_blank" rel="noopener noreferrer" class="directions-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Directions
+                  </a>
+                </div>
+              </div>
+            `;
+          }
+
+          if (vicar.mobile1 || vicar.mobile2 || vicar.email) {
+            bodyHTML += `<div class="vicar-contact-box">`;
+            if (vicar.mobile1) bodyHTML += buildGroup("Mobile 1", `<a href="tel:${vicar.mobile1}" style="color:#633D2E; font-weight:600; text-decoration:underline;">${vicar.mobile1}</a>`);
+            if (vicar.mobile2) bodyHTML += buildGroup("Mobile 2", `<a href="tel:${vicar.mobile2}" style="color:#633D2E; font-weight:600; text-decoration:underline;">${vicar.mobile2}</a>`);
+            if (vicar.email) bodyHTML += buildGroup("Email", `<a href="mailto:${vicar.email}" style="color:#E0954A; font-weight:600; text-decoration:underline;">${vicar.email}</a>`);
+            bodyHTML += `</div>`;
+          }
+        }
+
+        bodyHTML += `
+            </div>
+          </div>
+        `;
+
+        modalBody.innerHTML = bodyHTML;
+        modalOverlay.classList.add('active');
+        modalOverlay.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      }
+
+      function closeVicarModal() {
+        modalOverlay.classList.remove('active');
+        modalOverlay.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      // Card Click Listeners
+      vicarCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          const vicarId = card.getAttribute('data-vicar-id');
+          openVicarModal(vicarId);
+        });
+
+        card.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            const vicarId = card.getAttribute('data-vicar-id');
+            openVicarModal(vicarId);
+          }
+        });
+      });
+
+      // Close button listener
+      if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeVicarModal);
+      }
+
+      // Overlay click listener (close if clicked outside container)
+      if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+          if (e.target === modalOverlay) {
+            closeVicarModal();
+          }
+        });
+      }
+
+      // ESC Key Listener
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+          closeVicarModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
